@@ -1,4 +1,4 @@
-/* adler32.js (C) 2014-present SheetJS -- http://sheetjs.com */
+/* adler32.js (C) 2014-present SheetJS -- http://sheetjs.com  trimmed down by acodrst*/
 export function adler32_buf(buf, seed) {
 	var a = 1, b = 0, L = buf.length, M = 0;
 	if(typeof seed === 'number') { a = seed & 0xFFFF; b = (seed >>> 16) & 0xFFFF; }
